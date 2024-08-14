@@ -1,7 +1,8 @@
 import styled from "styled-components/native";
+import { background, primary, tertiary, text } from "../@core/theme";
 
 export const Button = styled.TouchableOpacity`
-  background-color: blue;
+  background-color: ${primary};
   justify-content: center;
   align-items: center;
   width: 251px;
@@ -12,7 +13,7 @@ export const Button = styled.TouchableOpacity`
 export const ButtonText = styled.Text`
   font-size: 24px;
   font-weight: bold;
-  color: white;
+  color: ${text};
   text-align: center;
 `;
 
@@ -34,14 +35,13 @@ export const Overlay = styled.View`
 export const LandingTitle = styled.Text`
   font-weight: bold;
   font-size: 32px;
-  color: white;
+  color: ${primary};
   text-align: center;
 `;
 
 export const LandingImage = styled.Image`
   width: 118px;
   height: 118px;
-  color: blue;
 `;
 
 export const LandingContainer = styled.View`
@@ -50,5 +50,7 @@ export const LandingContainer = styled.View`
 `;
 
 export const VersionText = styled.Text`
-
-`
+  color: ${tertiary};
+  font-size: 12px;
+  font-weight: bold;
+`;

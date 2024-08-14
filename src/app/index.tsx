@@ -9,6 +9,7 @@ import {
   LandingImage,
   LandingTitle,
   Overlay,
+  VersionText,
 } from "./styles";
 
 const User = () => {
@@ -24,6 +25,7 @@ const User = () => {
           Get Started
         </ButtonText>
       </Button>
+      <VersionText>v.0.01</VersionText>
     </LandingBackground>
   );
 };
